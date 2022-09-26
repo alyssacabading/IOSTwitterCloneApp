@@ -52,9 +52,9 @@
         <!--Home-->
         <scene sceneID="40Y-PS-u62">
             <objects>
-                <tableViewController id="Vbd-PZ-nGL" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="Vbd-PZ-nGL" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="yCV-vw-r1S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -111,6 +111,9 @@
                     <navigationItem key="navigationItem" title="Home" id="UIY-ob-veb">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="z1H-Cg-62w">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogout:" destination="Vbd-PZ-nGL" id="mIb-3i-iet"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -121,9 +124,9 @@
         <!--Navigation Controller-->
         <scene sceneID="D39-bw-IUx">
             <objects>
-                <navigationController id="aZw-qL-pKa" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="aZw-qL-pKa" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleAspectFill" id="BlA-21-Rs1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.28086874579999999" green="0.68894812490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.28086874579999999" green="0.68894812490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
